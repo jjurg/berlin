@@ -17,6 +17,17 @@
       border-left: 1px solid #ccc;
       background: #f9f9f9;
     }
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+      background: white;
+      padding: 6px 8px;
+      border-radius: 4px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.3);
+      line-height: 1.4;
+    }
     .label-tooltip {
       background: rgba(255,255,255,0.8);
       border: none;
@@ -30,6 +41,7 @@
   <div id="map"></div>
   <div id="sidebar"><p>Select a place to see details.</p></div>
 </div>
+<div id="controls"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
   // Initialize map
@@ -112,12 +124,24 @@
       }
       var all = L.featureGroup(groups.map(function(g) { return g.layer; }));
       map.fitBounds(all.getBounds().pad(0.1));
-
-      var overlays = {};
+      var controls = document.getElementById('controls');
       groups.forEach(function(g) {
-        overlays[g.name] = g.layer;
+        var label = document.createElement('label');
+        var cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.checked = true;
+        cb.onchange = function() {
+          if (cb.checked) {
+            g.layer.addTo(map);
+          } else {
+            map.removeLayer(g.layer);
+          }
+        };
+        label.appendChild(cb);
+        label.appendChild(document.createTextNode(' ' + g.name));
+        controls.appendChild(label);
+        controls.appendChild(document.createElement('br'));
       });
-      L.control.layers(null, overlays, { collapsed: false, position: 'topleft' }).addTo(map);
     });
 </script>
 </body>
