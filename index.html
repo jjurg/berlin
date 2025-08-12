@@ -74,15 +74,35 @@
       for (var i = 0; i < folders.length; i++) {
         var folder = folders[i];
         var layer = L.layerGroup();
-        var fname = folder.getElementsByTagName('name')[0].textContent;
+        var fnameEl = folder.getElementsByTagName('name')[0];
+        if (!fnameEl) {
+          console.warn('Folder without <name> skipped');
+          continue;
+        }
+        var fname = fnameEl.textContent;
         var color = dayColors[i % dayColors.length];
         var placemarks = folder.getElementsByTagName('Placemark');
         for (var j = 0; j < placemarks.length; j++) {
           var pm = placemarks[j];
-          var pmName = pm.getElementsByTagName('name')[0].textContent;
+          var pmNameEl = pm.getElementsByTagName('name')[0];
+          if (!pmNameEl) {
+            console.warn('Placemark without <name> skipped');
+            continue;
+          }
+          var pmName = pmNameEl.textContent;
           var point = pm.getElementsByTagName('Point');
+          var line = pm.getElementsByTagName('LineString');
+          if (!point.length && !line.length) {
+            console.warn('Placemark "' + pmName + '" missing <Point> or <LineString>; skipped');
+            continue;
+          }
           if (point.length) {
-            var coord = point[0].getElementsByTagName('coordinates')[0].textContent.trim();
+            var coordEl = point[0].getElementsByTagName('coordinates')[0];
+            if (!coordEl) {
+              console.warn('Placemark "' + pmName + '" missing <coordinates>; skipped');
+              continue;
+            }
+            var coord = coordEl.textContent.trim();
             var parts = coord.split(',');
             var lon = parseFloat(parts[0]);
             var lat = parseFloat(parts[1]);
@@ -108,9 +128,13 @@
               };
             }(pmName));
           }
-          var line = pm.getElementsByTagName('LineString');
           if (line.length) {
-            var coordsText = line[0].getElementsByTagName('coordinates')[0].textContent.trim();
+            var coordsEl = line[0].getElementsByTagName('coordinates')[0];
+            if (!coordsEl) {
+              console.warn('Placemark "' + pmName + '" missing <coordinates>; skipped');
+              continue;
+            }
+            var coordsText = coordsEl.textContent.trim();
             var coords = coordsText.split(/\s+/).map(function(c) {
               var p = c.split(',');
               return [parseFloat(p[1]), parseFloat(p[0])];
