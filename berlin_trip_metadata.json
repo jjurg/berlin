@@ -1,0 +1,356 @@
+[
+  {
+    "day": "Day 1",
+    "event_number": 1,
+    "title": "Prenzlauer Berg – Kollwitzkiez",
+    "tags": [
+      "arrival",
+      "vintage",
+      "cafes",
+      "neighbourhood"
+    ],
+    "full_description": "Stroll the Kollwitzkiez around Kollwitzplatz and Oderberger Straße: vintage shops, indie boutiques and cafés in late‑19th‑century streets that escaped heavy post‑war rebuilding.",
+    "why_selected": "It nails your request for students, art and culture in a compact, walkable area, perfect for your arrival afternoon.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Kollwitzplatz_2014-03-30_3.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/Prenzlauer_Berg",
+      "https://en.wikipedia.org/wiki/Kollwitzplatz"
+    ]
+  },
+  {
+    "day": "Day 1",
+    "event_number": 2,
+    "title": "The Barn (Specialty Coffee)",
+    "tags": [
+      "coffee",
+      "specialty",
+      "break"
+    ],
+    "full_description": "Benchmark Berlin roaster with meticulous espresso and filter coffee; minimalist interior and barista‑driven approach.",
+    "why_selected": "You asked for a top coffee stop; this is one of Europe’s most awarded specialty roasters.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Coffee_Beans_in_Berlin.jpg",
+    "external_links": [
+      "https://thebarn.de/",
+      "https://en.wikipedia.org/wiki/Specialty_coffee"
+    ]
+  },
+  {
+    "day": "Day 1",
+    "event_number": 3,
+    "title": "Kanaan (Lunch)",
+    "tags": [
+      "lunch",
+      "mediterranean",
+      "quick"
+    ],
+    "full_description": "Israeli‑Palestinian restaurant known for fresh salads, hummus and pita—excellent for a relaxed, nutritious lunch.",
+    "why_selected": "High quality, creative, quick—fits your effective travel style without a long sit‑down.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Hummus_with_toppings.jpg",
+    "external_links": [
+      "https://www.kanaan-berlin.de/",
+      "https://www.timeout.com/berlin/restaurants/kanaan"
+    ]
+  },
+  {
+    "day": "Day 1",
+    "event_number": 4,
+    "title": "Hackescher Markt & Hackesche Höfe",
+    "tags": [
+      "art",
+      "architecture",
+      "street-art"
+    ],
+    "full_description": "Interlinked courtyards with Art Nouveau details, galleries and design stores; adjacent Haus Schwarzenberg keeps the raw street‑art spirit alive.",
+    "why_selected": "It condenses Berlin’s creative scene into one compact set of courtyards close to central sights.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Hackesche_H%C3%B6fe%2C_Berlin-Mitte%2C_2008.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/Hackesche_H%C3%B6fe",
+      "https://en.wikipedia.org/wiki/Hackescher_Markt",
+      "https://en.wikipedia.org/wiki/Haus_Schwarzenberg"
+    ]
+  },
+  {
+    "day": "Day 1",
+    "event_number": 5,
+    "title": "Monbijoupark (Riverside Walk)",
+    "tags": [
+      "park",
+      "riverside",
+      "relax"
+    ],
+    "full_description": "Compact park on the Spree opposite Museum Island—easy riverside loop to unwind before heading back.",
+    "why_selected": "Parks were on your wish‑list; this is right next to your Hackescher Markt stop.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Monbijoupark_Berlin_2015.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/Monbijoupark",
+      "https://www.visitberlin.de/en/monbijoupark"
+    ]
+  },
+  {
+    "day": "Day 2",
+    "event_number": 1,
+    "title": "Alexanderplatz & Fernsehturm View",
+    "tags": [
+      "DDR",
+      "landmark",
+      "view"
+    ],
+    "full_description": "DDR‑era showcase square with Berlin TV Tower dominating the skyline; good orientation point for East Berlin.",
+    "why_selected": "Sets the tone for the Cold War day and gives you a fast city overview.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Berlin_-_Fernsehturm_und_Alexanderplatz.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/Alexanderplatz",
+      "https://en.wikipedia.org/wiki/Fernsehturm_Berlin"
+    ]
+  },
+  {
+    "day": "Day 2",
+    "event_number": 2,
+    "title": "Karl-Marx-Allee",
+    "tags": [
+      "DDR",
+      "architecture",
+      "boulevard"
+    ],
+    "full_description": "Grand socialist boulevard lined with Stalinist ‘wedding‑cake’ architecture from the 1950s.",
+    "why_selected": "One of the clearest surviving streetscapes of East German urban ideology.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Karl-Marx-Allee_2013.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/Karl-Marx-Allee"
+    ]
+  },
+  {
+    "day": "Day 2",
+    "event_number": 3,
+    "title": "Silo Coffee (Friedrichshain)",
+    "tags": [
+      "coffee",
+      "brunch",
+      "nearby"
+    ],
+    "full_description": "Specialty coffee and hearty brunch plates a short hop from the East Side Gallery.",
+    "why_selected": "Best‑in‑area coffee stop to fuel the wall walk without detours.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flat_white_coffee_with_latte_art.jpg",
+    "external_links": [
+      "https://silocoffee.com/",
+      "https://www.handpickedberlin.com/coffee/silo"
+    ]
+  },
+  {
+    "day": "Day 2",
+    "event_number": 4,
+    "title": "East Side Gallery (Berlin Wall)",
+    "tags": [
+      "wall",
+      "art",
+      "history"
+    ],
+    "full_description": "1.3 km open‑air gallery painted on the longest surviving stretch of the Berlin Wall.",
+    "why_selected": "Core Cold War site; combines history with contemporary art.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/East_Side_Gallery_Berlin.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/East_Side_Gallery",
+      "https://www.visitberlin.de/en/east-side-gallery"
+    ]
+  },
+  {
+    "day": "Day 2",
+    "event_number": 5,
+    "title": "Oberbaumbrücke",
+    "tags": [
+      "bridge",
+      "symbolic",
+      "photo"
+    ],
+    "full_description": "Neo‑Gothic bridge connecting Friedrichshain (former East) and Kreuzberg (former West) with striking towers.",
+    "why_selected": "A literal and symbolic crossing between East and West on your route.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Oberbaumbruecke_Berlin_2005.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/Oberbaum_Bridge"
+    ]
+  },
+  {
+    "day": "Day 2",
+    "event_number": 6,
+    "title": "Michelberger Hotel Café (Lunch)",
+    "tags": [
+      "lunch",
+      "seasonal",
+      "creative"
+    ],
+    "full_description": "Creative hotel café with seasonal, local produce; quick service and comfortable seating.",
+    "why_selected": "Quality lunch stop right next to Oberbaumbrücke to keep momentum.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Lunch_salad.jpg",
+    "external_links": [
+      "https://michelbergerhotel.com/",
+      "https://guide.michelin.com/en/article/dining-out/michelberger-hotel-berlin"
+    ]
+  },
+  {
+    "day": "Day 2",
+    "event_number": 7,
+    "title": "Gedenkstätte Berliner Mauer (Bernauer Straße)",
+    "tags": [
+      "memorial",
+      "wall",
+      "open-air"
+    ],
+    "full_description": "Open‑air memorial with preserved wall segments, watchtower line and documentation center telling escape stories.",
+    "why_selected": "Best place to understand the physical border and its human impact in situ.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Berliner_Mauer_Gedenkst%C3%A4tte_Bernauer_Stra%C3%9Fe.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/Berlin_Wall_Memorial",
+      "https://www.berliner-mauer-gedenkstaette.de/en/"
+    ]
+  },
+  {
+    "day": "Day 2",
+    "event_number": 8,
+    "title": "Tränenpalast (Palace of Tears)",
+    "tags": [
+      "border",
+      "museum",
+      "free"
+    ],
+    "full_description": "Former border crossing hall at Friedrichstraße station; exhibits on divided families and everyday border checks (free).",
+    "why_selected": "Authentic site with powerful personal stories—adds emotional depth to the day.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Tr%C3%A4nenpalast_2011.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/Tr%C3%A4nenpalast",
+      "https://www.hdg.de/traenenpalast/"
+    ]
+  },
+  {
+    "day": "Day 2",
+    "event_number": 9,
+    "title": "James-Simon-Park / Museum Island View",
+    "tags": [
+      "park",
+      "riverside",
+      "photo"
+    ],
+    "full_description": "Small riverside park across from Museum Island—great for a cooldown stroll and classic Berlin skyline photos.",
+    "why_selected": "Parks were important to you; this one is right on your path back.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/James-Simon-Park_Berlin.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/Museum_Island",
+      "https://www.visitberlin.de/en/james-simon-park"
+    ]
+  },
+  {
+    "day": "Day 3",
+    "event_number": 1,
+    "title": "Kurfürstendamm",
+    "tags": [
+      "west-berlin",
+      "boulevard",
+      "contrast"
+    ],
+    "full_description": "West Berlin’s grand boulevard—shopping arcades and cafés that defined the city’s capitalist counter‑image during the Cold War.",
+    "why_selected": "Gives you the West Berlin vibe before you dive into the heavier history stops.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Kurf%C3%BCrstendamm_Berlin_2010.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/Kurfürstendamm"
+    ]
+  },
+  {
+    "day": "Day 3",
+    "event_number": 2,
+    "title": "Kaiser‑Wilhelm‑Gedächtniskirche",
+    "tags": [
+      "memorial",
+      "architecture",
+      "west-berlin"
+    ],
+    "full_description": "Bombed‑out church left as a memorial with a striking modern chapel beside it.",
+    "why_selected": "One of West Berlin’s most poignant reminders of war and reconstruction.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Kaiser-Wilhelm-Ged%C3%A4chtniskirche_Berlin.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/Kaiser_Wilhelm_Memorial_Church"
+    ]
+  },
+  {
+    "day": "Day 3",
+    "event_number": 3,
+    "title": "Checkpoint Charlie (Photo Stop)",
+    "tags": [
+      "checkpoint",
+      "symbol",
+      "photo"
+    ],
+    "full_description": "Iconic Allied checkpoint between American and Soviet sectors; today a symbol of Cold War standoffs.",
+    "why_selected": "Short visual stop to connect names with places on your West day.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/2012-11-18_Berlin_Checkpoint_Charlie_8265.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/Checkpoint_Charlie"
+    ]
+  },
+  {
+    "day": "Day 3",
+    "event_number": 4,
+    "title": "Topographie des Terrors (Exhibition)",
+    "tags": [
+      "museum",
+      "free",
+      "documentation"
+    ],
+    "full_description": "Free documentation center on the former Gestapo/SS headquarters site; excellent outdoor wall exhibit as well.",
+    "why_selected": "High‑quality, well‑curated context that frames Berlin’s 20th‑century terror apparatus and the later division.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Topographie_des_Terrors_Berlin.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/Topography_of_Terror",
+      "https://www.topographie.de/en/"
+    ]
+  },
+  {
+    "day": "Day 3",
+    "event_number": 5,
+    "title": "Lunch: Mustafa’s Gemüse Kebap (or Café Einstein)",
+    "tags": [
+      "lunch",
+      "streetfood",
+      "classic"
+    ],
+    "full_description": "Two contrasting lunch options: the cult kebab stand near Mehringdamm, or Viennese‑style brasserie in a historic villa.",
+    "why_selected": "Both are quintessential Berlin experiences—fast street classic vs. unhurried sit‑down.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/D%C3%B6ner_kebab_Berlin.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/D%C3%B6ner_kebab_in_Berlin",
+      "https://www.cafeeinstein.com/"
+    ]
+  },
+  {
+    "day": "Day 3",
+    "event_number": 6,
+    "title": "Stasi Museum (Former HQ)",
+    "tags": [
+      "stasi",
+      "intelligence",
+      "history"
+    ],
+    "full_description": "Located in the former Ministry for State Security complex; preserved offices of Erich Mielke and exhibits on surveillance.",
+    "why_selected": "Direct encounter with the DDR’s intelligence apparatus—key to understanding daily control mechanisms.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Stasi-Museum_Berlin_Lichtenberg_2013.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/Stasi_Museum",
+      "https://www.stasimuseum.de/en/"
+    ]
+  },
+  {
+    "day": "Day 3",
+    "event_number": 7,
+    "title": "Museumsinsel (Island) & Lustgarten Walk",
+    "tags": [
+      "unesco",
+      "park",
+      "architecture"
+    ],
+    "full_description": "UNESCO‑listed museum complex in the Spree with the Lustgarten park—ideal for a graceful finale stroll.",
+    "why_selected": "You wanted culture plus a park moment; this offers both with minimal transit time.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Lustgarten_Berlin_2012.jpg",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/Museum_Island",
+      "https://en.wikipedia.org/wiki/Lustgarten"
+    ]
+  }
+]
