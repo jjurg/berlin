@@ -18,10 +18,7 @@
       background: #f9f9f9;
     }
     #controls {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      z-index: 1000;
+      margin-bottom: 10px;
       background: white;
       padding: 6px 8px;
       border-radius: 4px;
@@ -39,9 +36,11 @@
 <body>
 <div id="container">
   <div id="map"></div>
-  <div id="sidebar"><p>Select a place to see details.</p></div>
+  <div id="sidebar">
+    <div id="controls"></div>
+    <div id="info"><p>Select a place to see details.</p></div>
+  </div>
 </div>
-<div id="controls"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
   // Initialize map
@@ -91,7 +90,7 @@
             marker.bindTooltip(pmName, { permanent: true, direction: 'right', className: 'label-tooltip' });
             marker.on('click', function(name) {
               return function() {
-                var info = document.getElementById('sidebar');
+                var info = document.getElementById('info');
                 info.innerHTML = '<p>Loading...</p>';
                 fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(name))
                   .then(function(res) { return res.json(); })
