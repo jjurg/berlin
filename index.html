@@ -39,6 +39,9 @@
       padding: 0 4px;
       font-size: 12px;
     }
+    #info h2 { margin-top: 0; }
+    #info img { max-width: 100%; display: block; margin: 10px 0; }
+    #info p { margin: 0 0 10px; }
   </style>
 </head>
 <body>
@@ -93,116 +96,143 @@
     }
   }
 
-  fetch('berlijn_trip_mymaps.kml')
-    .then(function(res) { return res.text(); })
-    .then(function(kmlText) {
-      var parser = new DOMParser();
-      var kml = parser.parseFromString(kmlText, 'text/xml');
-      if (kml.getElementsByTagName('parsererror').length) {
-        logParseError('Error parsing KML document');
-        return;
-      }
-      var folders = kml.getElementsByTagName('Folder');
-      var groups = [];
-      for (var i = 0; i < folders.length; i++) {
-        var folder = folders[i];
-        var layer = L.featureGroup();
-        var fnameEl = folder.getElementsByTagName('name')[0];
-        if (!fnameEl) {
-          logParseError('Folder without <name> skipped');
-          continue;
-        }
-        var fname = fnameEl.textContent;
-        var color = dayColors[i % dayColors.length];
-        var placemarks = folder.getElementsByTagName('Placemark');
-        for (var j = 0; j < placemarks.length; j++) {
-          var pm = placemarks[j];
-          var pmNameEl = pm.getElementsByTagName('name')[0];
-          if (!pmNameEl) {
-            logParseError('Placemark without <name> skipped');
-            continue;
-          }
-          var pmName = pmNameEl.textContent;
-          var point = pm.getElementsByTagName('Point');
-          var line = pm.getElementsByTagName('LineString');
-          if (!point.length && !line.length) {
-            logParseError('Placemark "' + pmName + '" missing <Point> or <LineString>; skipped');
-            continue;
-          }
-          if (point.length) {
-            var coordEl = point[0].getElementsByTagName('coordinates')[0];
-            if (!coordEl) {
-              logParseError('Placemark "' + pmName + '" missing <coordinates>; skipped');
-              continue;
-            }
-            var coord = coordEl.textContent.trim();
-            var parts = coord.split(',');
-            var lon = parseFloat(parts[0]);
-            var lat = parseFloat(parts[1]);
-            var marker = L.marker([lat, lon], { icon: squareIcon(color) }).addTo(layer);
-            marker.bindTooltip(pmName, { permanent: true, direction: 'right', className: 'label-tooltip' });
-            marker.on('click', function(name) {
-              return function() {
-                var info = document.getElementById('info');
-                info.innerHTML = '<p>Loading...</p>';
-                fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(name))
-                  .then(function(res) { return res.json(); })
-                  .then(function(data) {
-                    var html = '<h2>' + data.title + '</h2>';
-                    if (data.thumbnail && data.thumbnail.source) {
-                      html += '<img src="' + data.thumbnail.source + '" alt="' + data.title + '" style="max-width:100%;">';
-                    }
-                    html += data.extract_html || '<p>No description available.</p>';
-                    info.innerHTML = html;
-                  })
-                  .catch(function() {
-                    info.innerHTML = '<p>Could not load details.</p>';
-                  });
-              };
-            }(pmName));
-          }
-          if (line.length) {
-            var coordsEl = line[0].getElementsByTagName('coordinates')[0];
-            if (!coordsEl) {
-              logParseError('Placemark "' + pmName + '" missing <coordinates>; skipped');
-              continue;
-            }
-            var coordsText = coordsEl.textContent.trim();
-            var coords = coordsText.split(/\s+/).map(function(c) {
-              var p = c.split(',');
-              return [parseFloat(p[1]), parseFloat(p[0])];
-            });
-            L.polyline(coords, { color: color, weight: 3 }).addTo(layer);
-          }
-        }
-        layer.addTo(map);
-        groups.push({ name: fname, layer: layer });
-      }
-      var all = L.featureGroup(groups.map(function(g) { return g.layer; }));
-      map.fitBounds(all.getBounds().pad(0.1));
-      logStatus('KML loaded successfully.');
-      var controls = document.getElementById('controls');
-      groups.forEach(function(g) {
-        var label = document.createElement('label');
-        var cb = document.createElement('input');
-        cb.type = 'checkbox';
-        cb.checked = true;
-        cb.onchange = function() {
-          if (cb.checked) {
-            g.layer.addTo(map);
-          } else {
-            map.removeLayer(g.layer);
-          }
-        };
-        label.appendChild(cb);
-        label.appendChild(document.createTextNode(' ' + g.name));
-        controls.appendChild(label);
-        controls.appendChild(document.createElement('br'));
-      });
+  var metadata = {};
+
+  fetch('berlin_trip_metadata.json')
+    .then(function(res) { return res.json(); })
+    .then(function(data) {
+      data.forEach(function(item) { metadata[item.title] = item; });
+      loadKml();
     })
     .catch(function(err) {
-      logParseError('Failed to load KML: ' + err.message);
+      logParseError('Failed to load metadata: ' + err.message);
+      loadKml();
     });
+
+  function renderInfo(name) {
+    var info = document.getElementById('info');
+    var md = metadata[name];
+    if (!md) {
+      info.innerHTML = '<p>No details available.</p>';
+      return;
+    }
+    var html = '<h2>' + md.title + '</h2>';
+    if (md.image_url) {
+      html += '<img src="' + md.image_url + '" alt="' + md.title + '">';
+    }
+    if (md.full_description) {
+      html += '<p>' + md.full_description + '</p>';
+    }
+    if (md.why_selected) {
+      html += '<p><em>' + md.why_selected + '</em></p>';
+    }
+    if (md.tags && md.tags.length) {
+      html += '<p><strong>Tags:</strong> ' + md.tags.join(', ') + '</p>';
+    }
+    if (md.external_links && md.external_links.length) {
+      html += '<p><strong>Links:</strong><br>' + md.external_links.map(function(url) { return '<a href="' + url + '" target="_blank">' + url + '</a>'; }).join('<br>') + '</p>';
+    }
+    info.innerHTML = html;
+  }
+
+  function loadKml() {
+    fetch('berlijn_trip_mymaps.kml')
+      .then(function(res) { return res.text(); })
+      .then(function(kmlText) {
+        var parser = new DOMParser();
+        var kml = parser.parseFromString(kmlText, 'text/xml');
+        if (kml.getElementsByTagName('parsererror').length) {
+          logParseError('Error parsing KML document');
+          return;
+        }
+        var folders = kml.getElementsByTagName('Folder');
+        var groups = [];
+        for (var i = 0; i < folders.length; i++) {
+          var folder = folders[i];
+          var layer = L.featureGroup();
+          var fnameEl = folder.getElementsByTagName('name')[0];
+          if (!fnameEl) {
+            logParseError('Folder without <name> skipped');
+            continue;
+          }
+          var fname = fnameEl.textContent;
+          var color = dayColors[i % dayColors.length];
+          var placemarks = folder.getElementsByTagName('Placemark');
+          for (var j = 0; j < placemarks.length; j++) {
+            var pm = placemarks[j];
+            var pmNameEl = pm.getElementsByTagName('name')[0];
+            if (!pmNameEl) {
+              logParseError('Placemark without <name> skipped');
+              continue;
+            }
+            var pmName = pmNameEl.textContent;
+            var point = pm.getElementsByTagName('Point');
+            var line = pm.getElementsByTagName('LineString');
+            if (!point.length && !line.length) {
+              logParseError('Placemark "' + pmName + '" missing <Point> or <LineString>; skipped');
+              continue;
+            }
+            if (point.length) {
+              var coordEl = point[0].getElementsByTagName('coordinates')[0];
+              if (!coordEl) {
+                logParseError('Placemark "' + pmName + '" missing <coordinates>; skipped');
+                continue;
+              }
+              var coord = coordEl.textContent.trim();
+              var parts = coord.split(',');
+              var lon = parseFloat(parts[0]);
+              var lat = parseFloat(parts[1]);
+              var marker = L.marker([lat, lon], { icon: squareIcon(color) }).addTo(layer);
+              marker.bindTooltip(pmName, { permanent: true, direction: 'right', className: 'label-tooltip' });
+              marker.on('click', function(name) {
+                return function() {
+                  renderInfo(name);
+                };
+              }(pmName));
+            }
+            if (line.length) {
+              var coordsEl = line[0].getElementsByTagName('coordinates')[0];
+              if (!coordsEl) {
+                logParseError('Placemark "' + pmName + '" missing <coordinates>; skipped');
+                continue;
+              }
+              var coordsText = coordsEl.textContent.trim();
+              var coords = coordsText.split(/\s+/).map(function(c) {
+                var p = c.split(',');
+                return [parseFloat(p[1]), parseFloat(p[0])];
+              });
+              L.polyline(coords, { color: color, weight: 3 }).addTo(layer);
+            }
+          }
+          layer.addTo(map);
+          groups.push({ name: fname, layer: layer });
+        }
+        var all = L.featureGroup(groups.map(function(g) { return g.layer; }));
+        map.fitBounds(all.getBounds().pad(0.1));
+        logStatus('KML loaded successfully.');
+        var controls = document.getElementById('controls');
+        groups.forEach(function(g) {
+          var label = document.createElement('label');
+          var cb = document.createElement('input');
+          cb.type = 'checkbox';
+          cb.checked = true;
+          cb.onchange = function() {
+            if (cb.checked) {
+              g.layer.addTo(map);
+            } else {
+              map.removeLayer(g.layer);
+            }
+          };
+          label.appendChild(cb);
+          label.appendChild(document.createTextNode(' ' + g.name));
+          controls.appendChild(label);
+          controls.appendChild(document.createElement('br'));
+        });
+      })
+      .catch(function(err) {
+        logParseError('Failed to load KML: ' + err.message);
+      });
+  }
 </script>
 </body>
 </html>
