@@ -17,6 +17,10 @@
       border-left: 1px solid #ccc;
       background: #f9f9f9;
     }
+    #status-log {
+      color: green;
+      margin-bottom: 10px;
+    }
     #error-log {
       color: red;
       margin-bottom: 10px;
@@ -42,6 +46,7 @@
   <div id="map"></div>
   <div id="sidebar">
     <div id="controls"></div>
+    <div id="status-log"></div>
     <div id="error-log"></div>
     <div id="info"><p>Select a place to see details.</p></div>
   </div>
@@ -79,6 +84,15 @@
     }
   }
 
+  function logStatus(msg) {
+    var logEl = document.getElementById("status-log");
+    if (logEl) {
+      var p = document.createElement("p");
+      p.textContent = msg;
+      logEl.appendChild(p);
+    }
+  }
+
   fetch('berlijn_trip_mymaps.kml')
     .then(function(res) { return res.text(); })
     .then(function(kmlText) {
@@ -92,7 +106,7 @@
       var groups = [];
       for (var i = 0; i < folders.length; i++) {
         var folder = folders[i];
-        var layer = L.layerGroup();
+        var layer = L.featureGroup();
         var fnameEl = folder.getElementsByTagName('name')[0];
         if (!fnameEl) {
           logParseError('Folder without <name> skipped');
@@ -166,6 +180,7 @@
       }
       var all = L.featureGroup(groups.map(function(g) { return g.layer; }));
       map.fitBounds(all.getBounds().pad(0.1));
+      logStatus('KML loaded successfully.');
       var controls = document.getElementById('controls');
       groups.forEach(function(g) {
         var label = document.createElement('label');
