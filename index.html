@@ -6,7 +6,8 @@
   <title>Berlin Day Trips</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
-    html, body, #map { height: 100%; margin: 0; }
+    html, body { height: 100%; margin: 0; }
+    #map { height: 100vh; width: 100%; }
     .label-tooltip {
       background: rgba(255,255,255,0.8);
       border: none;
@@ -32,12 +33,12 @@
   var dayColors = ['#d73027', '#4575b4', '#1a9850'];
 
   function squareIcon(color) {
-    return L.divIcon({
-      html: '<div style="width:12px;height:12px;background:'+color+';border:2px solid #fff;box-shadow:0 0 2px rgba(0,0,0,0.5)"></div>',
-      className: '',
-      iconSize: [12,12],
-      iconAnchor: [6,6]
-    });
+      return L.divIcon({
+        html: `<div style="width:12px;height:12px;background:${color};border:2px solid #fff;box-shadow:0 0 2px rgba(0,0,0,0.5)"></div>`,
+        className: '',
+        iconSize: [12,12],
+        iconAnchor: [6,6]
+      });
   }
 
   fetch('berlijn_trip_mymaps.kml')
