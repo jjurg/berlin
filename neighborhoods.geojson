@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mitte",
+        "culture": "Historic heart of Berlin with museums, galleries, and government buildings.",
+        "things_to_do": "Explore Museum Island, stroll Unter den Linden, visit Brandenburg Gate.",
+        "history": "Former center of East Berlin, home to significant historical sites from Prussian to Cold War era.",
+        "why_visit": "Combines iconic landmarks with modern cultural venues.",
+        "best_time": "Morning to midday when sites are less crowded."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[13.375, 52.533], [13.435, 52.533], [13.435, 52.505], [13.375, 52.505], [13.375, 52.533]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kreuzberg",
+        "culture": "Bohemian and multicultural, known for street art and alternative vibe.",
+        "things_to_do": "Walk along the East Side Gallery, sample international cuisine, enjoy nightlife on Oranienstraße.",
+        "history": "Once a walled-in enclave during the Cold War, now symbol of counterculture.",
+        "why_visit": "Experience Berlin's creative energy and diverse food scene.",
+        "best_time": "Evening for vibrant bars and restaurants."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[13.365, 52.510], [13.455, 52.510], [13.455, 52.485], [13.365, 52.485], [13.365, 52.510]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prenzlauer Berg",
+        "culture": "Charming neighborhood with cafes, boutiques, and restored pre-war buildings.",
+        "things_to_do": "Relax in Mauerpark, visit the Kulturbrauerei, browse weekend markets.",
+        "history": "From working-class district to gentrified hotspot after reunification.",
+        "why_visit": "Laid-back atmosphere, family-friendly, mix of old and new Berlin.",
+        "best_time": "Weekend afternoons for markets and park life."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[13.39, 52.555], [13.455, 52.555], [13.455, 52.535], [13.39, 52.535], [13.39, 52.555]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Charlottenburg",
+        "culture": "Upscale district famed for its royal heritage and shopping avenues.",
+        "things_to_do": "Tour Charlottenburg Palace, browse Kurfürstendamm's stores, visit the Kaiser Wilhelm Memorial Church.",
+        "history": "Former royal borough and later the commercial center of West Berlin.",
+        "why_visit": "Combines baroque architecture with high-end dining and retail.",
+        "best_time": "Afternoon for palace tours and evening for dining."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[13.26, 52.53], [13.31, 52.53], [13.31, 52.50], [13.26, 52.50], [13.26, 52.53]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Friedrichshain",
+        "culture": "Youthful and edgy area known for nightlife and street art.",
+        "things_to_do": "Hang out at Boxhagener Platz, explore RAW-Gelände, see the East Side Gallery.",
+        "history": "Once an industrial quarter, rejuvenated after reunification into a creative hub.",
+        "why_visit": "Alternative culture, clubs, and vibrant weekend markets.",
+        "best_time": "Late nights for clubs or weekend mornings for markets."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[13.43, 52.53], [13.48, 52.53], [13.48, 52.51], [13.43, 52.51], [13.43, 52.53]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Neukölln",
+        "culture": "Diverse and rapidly changing neighborhood with a thriving creative scene.",
+        "things_to_do": "Stroll along the Landwehr Canal, relax in Körnerpark, enjoy bars on Weserstraße.",
+        "history": "Historically working-class and immigrant area now experiencing gentrification.",
+        "why_visit": "Mix of cultures, street food, and nightlife.",
+        "best_time": "Evenings for the lively bar and restaurant scene."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[13.42, 52.49], [13.47, 52.49], [13.47, 52.45], [13.42, 52.45], [13.42, 52.49]]]
+      }
+    }
+  ]
+}
