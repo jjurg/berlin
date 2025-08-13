@@ -127,9 +127,12 @@
       var pages = data && data.query && data.query.pages;
       var page = pages && Object.values(pages)[0];
       var info = page && page.imageinfo && page.imageinfo[0];
-      return info && (info.thumburl || info.url) ? (info.thumburl || info.url) : filePathUrl;
+      var finalUrl = info && (info.thumburl || info.url) ? (info.thumburl || info.url) : filePathUrl;
+      logStatus('Fetched image URL: ' + finalUrl);
+      return finalUrl;
     } catch (e) {
       console.warn('Image fetch failed', e);
+      logStatus('Fetched image URL: ' + filePathUrl);
       return filePathUrl;
     }
   }
