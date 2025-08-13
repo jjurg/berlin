@@ -40,7 +40,6 @@
       font-size: 12px;
     }
     #info h2 { margin-top: 0; }
-    #info img { max-width: 100%; display: block; margin: 10px 0; }
     #info p { margin: 0 0 10px; }
   </style>
 </head>
@@ -114,42 +113,14 @@
       loadKml();
     });
 
-  async function fetchCommonsThumbnail(filePathUrl, width) {
-    try {
-      var url = new URL(filePathUrl);
-      var file = url.pathname.split('/').pop();
-      file = decodeURIComponent(file).replace(/ /g, '_');
-      var api = 'https://commons.wikimedia.org/w/api.php?action=query&titles=File:' +
-        encodeURIComponent(file) + '&prop=imageinfo&iiprop=url&iiurlwidth=' + width +
-        '&format=json&origin=*';
-      var res = await fetch(api);
-      var data = await res.json();
-      var pages = data && data.query && data.query.pages;
-      var page = pages && Object.values(pages)[0];
-      var info = page && page.imageinfo && page.imageinfo[0];
-      var finalUrl = info && (info.thumburl || info.url) ? (info.thumburl || info.url) : filePathUrl;
-      logStatus('Fetched image URL: ' + finalUrl);
-      return finalUrl;
-    } catch (e) {
-      console.warn('Image fetch failed', e);
-      logStatus('Fetched image URL: ' + filePathUrl);
-      return filePathUrl;
-    }
-  }
-
-  async function renderInfo(name) {
+  function renderInfo(name) {
     var info = document.getElementById('info');
     var md = metadata[name];
     if (!md) {
       info.innerHTML = '<p>No details available.</p>';
       return;
     }
-    var imgHtml = '';
-    if (md.image_url) {
-      var thumbUrl = await fetchCommonsThumbnail(md.image_url, 400);
-      imgHtml = '<img src="' + thumbUrl + '" alt="' + md.title + '" referrerpolicy="no-referrer">';
-    }
-    var html = '<h2>' + md.title + '</h2>' + imgHtml;
+    var html = '<h2>' + md.title + '</h2>';
     if (md.full_description) {
       html += '<p>' + md.full_description + '</p>';
     }
