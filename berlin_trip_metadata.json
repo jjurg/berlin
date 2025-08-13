@@ -4,12 +4,7 @@
     "event_number": 1,
     "title": "Prenzlauer Berg – Kollwitzkiez",
     "kml_name": "2. Prenzlauer Berg - Kollwitzkiez",
-    "tags": [
-      "arrival",
-      "vintage",
-      "cafes",
-      "neighbourhood"
-    ],
+    "tags": ["arrival", "vintage", "cafes", "neighbourhood"],
     "full_description": "Stroll the Kollwitzkiez around Kollwitzplatz and Oderberger Straße: vintage shops, indie boutiques and cafés in late‑19th‑century streets that escaped heavy post‑war rebuilding.",
     "why_selected": "It nails your request for students, art and culture in a compact, walkable area, perfect for your arrival afternoon.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kollwitzplatz_2014-03-30_3.jpg?width=600",
@@ -23,11 +18,7 @@
     "event_number": 2,
     "title": "The Barn (Specialty Coffee)",
     "kml_name": "3. The Barn Coffee (Kollwitzkiez)",
-    "tags": [
-      "coffee",
-      "specialty",
-      "break"
-    ],
+    "tags": ["coffee", "specialty", "break"],
     "full_description": "Benchmark Berlin roaster with meticulous espresso and filter coffee; minimalist interior and barista‑driven approach.",
     "why_selected": "You asked for a top coffee stop; this is one of Europe’s most awarded specialty roasters.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Coffee_Beans_in_Berlin.jpg?width=600",
@@ -41,11 +32,7 @@
     "event_number": 3,
     "title": "Kanaan (Lunch)",
     "kml_name": "4. Kanaan Restaurant",
-    "tags": [
-      "lunch",
-      "mediterranean",
-      "quick"
-    ],
+    "tags": ["lunch", "mediterranean", "quick"],
     "full_description": "Israeli‑Palestinian restaurant known for fresh salads, hummus and pita—excellent for a relaxed, nutritious lunch.",
     "why_selected": "High quality, creative, quick—fits your effective travel style without a long sit‑down.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hummus_with_toppings.jpg?width=600",
@@ -59,11 +46,7 @@
     "event_number": 4,
     "title": "Hackescher Markt & Hackesche Höfe",
     "kml_name": "5. Hackescher Markt & Hackesche Höfe",
-    "tags": [
-      "art",
-      "architecture",
-      "street-art"
-    ],
+    "tags": ["art", "architecture", "street-art"],
     "full_description": "Interlinked courtyards with Art Nouveau details, galleries and design stores; adjacent Haus Schwarzenberg keeps the raw street‑art spirit alive.",
     "why_selected": "It condenses Berlin’s creative scene into one compact set of courtyards close to central sights.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hackesche_H%C3%B6fe%2C_Berlin-Mitte%2C_2008.jpg?width=600",
@@ -78,11 +61,7 @@
     "event_number": 5,
     "title": "Monbijoupark (Riverside Walk)",
     "kml_name": "6. Monbijoupark",
-    "tags": [
-      "park",
-      "riverside",
-      "relax"
-    ],
+    "tags": ["park", "riverside", "relax"],
     "full_description": "Compact park on the Spree opposite Museum Island—easy riverside loop to unwind before heading back.",
     "why_selected": "Parks were on your wish‑list; this is right next to your Hackescher Markt stop.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Monbijoupark_Berlin_2015.jpg?width=600",
@@ -96,11 +75,7 @@
     "event_number": 1,
     "title": "Alexanderplatz & Fernsehturm View",
     "kml_name": "2. Alexanderplatz",
-    "tags": [
-      "DDR",
-      "landmark",
-      "view"
-    ],
+    "tags": ["DDR", "landmark", "view"],
     "full_description": "DDR‑era showcase square with Berlin TV Tower dominating the skyline; good orientation point for East Berlin.",
     "why_selected": "Sets the tone for the Cold War day and gives you a fast city overview.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Berlin_-_Fernsehturm_und_Alexanderplatz.jpg?width=600",
@@ -114,11 +89,7 @@
     "event_number": 2,
     "title": "Karl-Marx-Allee",
     "kml_name": "3. Karl-Marx-Allee",
-    "tags": [
-      "DDR",
-      "architecture",
-      "boulevard"
-    ],
+    "tags": ["DDR", "architecture", "boulevard"],
     "full_description": "Grand socialist boulevard lined with Stalinist ‘wedding‑cake’ architecture from the 1950s.",
     "why_selected": "One of the clearest surviving streetscapes of East German urban ideology.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Karl-Marx-Allee_2013.jpg?width=600",
@@ -131,11 +102,7 @@
     "event_number": 3,
     "title": "Silo Coffee (Friedrichshain)",
     "kml_name": "4. Silo Coffee",
-    "tags": [
-      "coffee",
-      "brunch",
-      "nearby"
-    ],
+    "tags": ["coffee", "brunch", "nearby"],
     "full_description": "Specialty coffee and hearty brunch plates a short hop from the East Side Gallery.",
     "why_selected": "Best‑in‑area coffee stop to fuel the wall walk without detours.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Flat_white_coffee_with_latte_art.jpg?width=600",
@@ -149,11 +116,7 @@
     "event_number": 4,
     "title": "East Side Gallery (Berlin Wall)",
     "kml_name": "5. East Side Gallery",
-    "tags": [
-      "wall",
-      "art",
-      "history"
-    ],
+    "tags": ["wall", "art", "history"],
     "full_description": "1.3 km open‑air gallery painted on the longest surviving stretch of the Berlin Wall.",
     "why_selected": "Core Cold War site; combines history with contemporary art.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/East_Side_Gallery_Berlin.jpg?width=600",
@@ -167,11 +130,7 @@
     "event_number": 5,
     "title": "Oberbaumbrücke",
     "kml_name": "6. Oberbaumbrücke",
-    "tags": [
-      "bridge",
-      "symbolic",
-      "photo"
-    ],
+    "tags": ["bridge", "symbolic", "photo"],
     "full_description": "Neo‑Gothic bridge connecting Friedrichshain (former East) and Kreuzberg (former West) with striking towers.",
     "why_selected": "A literal and symbolic crossing between East and West on your route.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oberbaumbruecke_Berlin_2005.jpg?width=600",
@@ -184,11 +143,7 @@
     "event_number": 6,
     "title": "Michelberger Hotel Café (Lunch)",
     "kml_name": "7. Michelberger Hotel Café",
-    "tags": [
-      "lunch",
-      "seasonal",
-      "creative"
-    ],
+    "tags": ["lunch", "seasonal", "creative"],
     "full_description": "Creative hotel café with seasonal, local produce; quick service and comfortable seating.",
     "why_selected": "Quality lunch stop right next to Oberbaumbrücke to keep momentum.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lunch_salad.jpg?width=600",
@@ -200,13 +155,23 @@
   {
     "day": "Day 2",
     "event_number": 7,
+    "title": "Stasi Museum (Former HQ)",
+    "kml_name": "8. Stasi Museum",
+    "tags": ["stasi", "intelligence", "history"],
+    "full_description": "Located in the former Ministry for State Security complex; preserved offices of Erich Mielke and exhibits on surveillance.",
+    "why_selected": "Direct encounter with the DDR’s intelligence apparatus—key to understanding daily control mechanisms.",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stasi-Museum_Berlin_Lichtenberg_2013.jpg?width=600",
+    "external_links": [
+      "https://en.wikipedia.org/wiki/Stasi_Museum",
+      "https://www.stasimuseum.de/en/"
+    ]
+  },
+  {
+    "day": "Day 2",
+    "event_number": 8,
     "title": "Gedenkstätte Berliner Mauer (Bernauer Straße)",
-    "kml_name": "8. Bernauer Straße Memorial",
-    "tags": [
-      "memorial",
-      "wall",
-      "open-air"
-    ],
+    "kml_name": "9. Bernauer Straße Memorial",
+    "tags": ["memorial", "wall", "open-air"],
     "full_description": "Open‑air memorial with preserved wall segments, watchtower line and documentation center telling escape stories.",
     "why_selected": "Best place to understand the physical border and its human impact in situ.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Berliner_Mauer_Gedenkst%C3%A4tte_Bernauer_Stra%C3%9Fe.jpg?width=600",
@@ -217,14 +182,10 @@
   },
   {
     "day": "Day 2",
-    "event_number": 8,
+    "event_number": 9,
     "title": "Tränenpalast (Palace of Tears)",
-    "kml_name": "9. Tränenpalast",
-    "tags": [
-      "border",
-      "museum",
-      "free"
-    ],
+    "kml_name": "10. Tränenpalast",
+    "tags": ["border", "museum", "free"],
     "full_description": "Former border crossing hall at Friedrichstraße station; exhibits on divided families and everyday border checks (free).",
     "why_selected": "Authentic site with powerful personal stories—adds emotional depth to the day.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tr%C3%A4nenpalast_2011.jpg?width=600",
@@ -235,14 +196,10 @@
   },
   {
     "day": "Day 2",
-    "event_number": 9,
+    "event_number": 10,
     "title": "James-Simon-Park / Museum Island View",
-    "kml_name": "10. James-Simon-Park",
-    "tags": [
-      "park",
-      "riverside",
-      "photo"
-    ],
+    "kml_name": "11. James-Simon-Park",
+    "tags": ["park", "riverside", "photo"],
     "full_description": "Small riverside park across from Museum Island—great for a cooldown stroll and classic Berlin skyline photos.",
     "why_selected": "Parks were important to you; this one is right on your path back.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/James-Simon-Park_Berlin.jpg?width=600",
@@ -256,11 +213,7 @@
     "event_number": 1,
     "title": "Kurfürstendamm",
     "kml_name": "2. Kurfürstendamm",
-    "tags": [
-      "west-berlin",
-      "boulevard",
-      "contrast"
-    ],
+    "tags": ["west-berlin", "boulevard", "contrast"],
     "full_description": "West Berlin’s grand boulevard—shopping arcades and cafés that defined the city’s capitalist counter‑image during the Cold War.",
     "why_selected": "Gives you the West Berlin vibe before you dive into the heavier history stops.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kurf%C3%BCrstendamm_Berlin_2010.jpg?width=600",
@@ -272,11 +225,7 @@
     "day": "Day 3",
     "event_number": 2,
     "title": "Kaiser‑Wilhelm‑Gedächtniskirche",
-    "tags": [
-      "memorial",
-      "architecture",
-      "west-berlin"
-    ],
+    "tags": ["memorial", "architecture", "west-berlin"],
     "full_description": "Bombed‑out church left as a memorial with a striking modern chapel beside it.",
     "why_selected": "One of West Berlin’s most poignant reminders of war and reconstruction.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kaiser-Wilhelm-Ged%C3%A4chtniskirche_Berlin.jpg?width=600",
@@ -289,11 +238,7 @@
     "event_number": 3,
     "title": "Checkpoint Charlie (Photo Stop)",
     "kml_name": "4. Checkpoint Charlie",
-    "tags": [
-      "checkpoint",
-      "symbol",
-      "photo"
-    ],
+    "tags": ["checkpoint", "symbol", "photo"],
     "full_description": "Iconic Allied checkpoint between American and Soviet sectors; today a symbol of Cold War standoffs.",
     "why_selected": "Short visual stop to connect names with places on your West day.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2012-11-18_Berlin_Checkpoint_Charlie_8265.jpg?width=600",
@@ -306,11 +251,7 @@
     "event_number": 4,
     "title": "Topographie des Terrors (Exhibition)",
     "kml_name": "5. Topographie des Terrors",
-    "tags": [
-      "museum",
-      "free",
-      "documentation"
-    ],
+    "tags": ["museum", "free", "documentation"],
     "full_description": "Free documentation center on the former Gestapo/SS headquarters site; excellent outdoor wall exhibit as well.",
     "why_selected": "High‑quality, well‑curated context that frames Berlin’s 20th‑century terror apparatus and the later division.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Topographie_des_Terrors_Berlin.jpg?width=600",
@@ -323,15 +264,8 @@
     "day": "Day 3",
     "event_number": 5,
     "title": "Lunch: Mustafa’s Gemüse Kebap (or Café Einstein)",
-    "kml_name": [
-      "6. Mustafa’s Gemüse Kebap",
-      "7. Café Einstein Stammhaus"
-    ],
-    "tags": [
-      "lunch",
-      "streetfood",
-      "classic"
-    ],
+    "kml_name": ["6. Mustafa’s Gemüse Kebap", "7. Café Einstein Stammhaus"],
+    "tags": ["lunch", "streetfood", "classic"],
     "full_description": "Two contrasting lunch options: the cult kebab stand near Mehringdamm, or Viennese‑style brasserie in a historic villa.",
     "why_selected": "Both are quintessential Berlin experiences—fast street classic vs. unhurried sit‑down.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/D%C3%B6ner_kebab_Berlin.jpg?width=600",
@@ -343,34 +277,9 @@
   {
     "day": "Day 3",
     "event_number": 6,
-    "title": "Stasi Museum (Former HQ)",
-    "kml_name": "8. Stasi Museum",
-    "tags": [
-      "stasi",
-      "intelligence",
-      "history"
-    ],
-    "full_description": "Located in the former Ministry for State Security complex; preserved offices of Erich Mielke and exhibits on surveillance.",
-    "why_selected": "Direct encounter with the DDR’s intelligence apparatus—key to understanding daily control mechanisms.",
-    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stasi-Museum_Berlin_Lichtenberg_2013.jpg?width=600",
-    "external_links": [
-      "https://en.wikipedia.org/wiki/Stasi_Museum",
-      "https://www.stasimuseum.de/en/"
-    ]
-  },
-  {
-    "day": "Day 3",
-    "event_number": 7,
     "title": "Museumsinsel (Island) & Lustgarten Walk",
-    "kml_name": [
-      "9. Museumsinsel",
-      "10. Lustgarten"
-    ],
-    "tags": [
-      "unesco",
-      "park",
-      "architecture"
-    ],
+    "kml_name": ["8. Museumsinsel", "9. Lustgarten"],
+    "tags": ["unesco", "park", "architecture"],
     "full_description": "UNESCO‑listed museum complex in the Spree with the Lustgarten park—ideal for a graceful finale stroll.",
     "why_selected": "You wanted culture plus a park moment; this offers both with minimal transit time.",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lustgarten_Berlin_2012.jpg?width=600",
