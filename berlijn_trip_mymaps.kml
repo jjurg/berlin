@@ -1,2 +1,72 @@
 <?xml version='1.0' encoding='utf-8'?>
-<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Berlijn Trip – Dag 1/2/3</name><Style id="day1-line"><LineStyle><color>ff2727d7</color><width>3</width></LineStyle></Style><Style id="day1-icon"><IconStyle><color>ff2727d7</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style><Style id="day2-line"><LineStyle><color>ffb47545</color><width>3</width></LineStyle></Style><Style id="day2-icon"><IconStyle><color>ffb47545</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style><Style id="day3-line"><LineStyle><color>ff50981a</color><width>3</width></LineStyle></Style><Style id="day3-icon"><IconStyle><color>ff50981a</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style><Folder><name>Dag 1 – Aankomst &amp; Creatieve vibe</name><Placemark><name>1. Bootshaus (B&amp;B)</name><styleUrl>#day1-icon</styleUrl><Point><coordinates>13.4834,52.4686,0</coordinates></Point></Placemark><Placemark><name>2. Prenzlauer Berg - Kollwitzkiez</name><styleUrl>#day1-icon</styleUrl><Point><coordinates>13.4235,52.538,0</coordinates></Point></Placemark><Placemark><name>3. The Barn Coffee (Kollwitzkiez)</name><styleUrl>#day1-icon</styleUrl><Point><coordinates>13.4206,52.5399,0</coordinates></Point></Placemark><Placemark><name>4. Kanaan Restaurant</name><styleUrl>#day1-icon</styleUrl><Point><coordinates>13.4224,52.5462,0</coordinates></Point></Placemark><Placemark><name>5. Hackescher Markt &amp; Hackesche Höfe</name><styleUrl>#day1-icon</styleUrl><Point><coordinates>13.4026,52.5246,0</coordinates></Point></Placemark><Placemark><name>6. Monbijoupark</name><styleUrl>#day1-icon</styleUrl><Point><coordinates>13.3955,52.5231,0</coordinates></Point></Placemark><Placemark><name>Dag 1 – Aankomst &amp; Creatieve vibe route</name><styleUrl>#day1-line</styleUrl><LineString><tessellate>1</tessellate><coordinates>13.4834,52.4686,0 13.4235,52.538,0 13.4206,52.5399,0 13.4224,52.5462,0 13.4026,52.5246,0 13.3955,52.5231,0</coordinates></LineString></Placemark></Folder><Folder><name>Dag 2 – Oost-Berlijn &amp; De Muur</name><Placemark><name>1. Bootshaus (B&amp;B)</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.4834,52.4686,0</coordinates></Point></Placemark><Placemark><name>2. Alexanderplatz</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.4132,52.5219,0</coordinates></Point></Placemark><Placemark><name>3. Karl-Marx-Allee</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.4295,52.5201,0</coordinates></Point></Placemark><Placemark><name>4. Silo Coffee</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.4535,52.5104,0</coordinates></Point></Placemark><Placemark><name>5. East Side Gallery</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.4399,52.505,0</coordinates></Point></Placemark><Placemark><name>6. Oberbaumbrücke</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.4484,52.5013,0</coordinates></Point></Placemark><Placemark><name>7. Michelberger Hotel Café</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.4481,52.5024,0</coordinates></Point></Placemark><Placemark><name>8. Bernauer Straße Memorial</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.3903,52.5351,0</coordinates></Point></Placemark><Placemark><name>9. Tränenpalast</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.3862,52.5206,0</coordinates></Point></Placemark><Placemark><name>10. James-Simon-Park</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.3982,52.5215,0</coordinates></Point></Placemark><Placemark><name>Dag 2 – Oost-Berlijn &amp; De Muur route</name><styleUrl>#day2-line</styleUrl><LineString><tessellate>1</tessellate><coordinates>13.4834,52.4686,0 13.4132,52.5219,0 13.4295,52.5201,0 13.4535,52.5104,0 13.4399,52.505,0 13.4484,52.5013,0 13.4481,52.5024,0 13.3903,52.5351,0 13.3862,52.5206,0 13.3982,52.5215,0</coordinates></LineString></Placemark></Folder><Folder><name>Dag 3 – West-Berlijn &amp; Spionage</name><Placemark><name>1. Bootshaus (B&amp;B)</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.4834,52.4686,0</coordinates></Point></Placemark><Placemark><name>2. Kurfürstendamm</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.3307,52.503,0</coordinates></Point></Placemark><Placemark><name>3. The Barn Ku’damm</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.3309,52.5039,0</coordinates></Point></Placemark><Placemark><name>4. Checkpoint Charlie</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.3904,52.5076,0</coordinates></Point></Placemark><Placemark><name>5. Topographie des Terrors</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.3826,52.507,0</coordinates></Point></Placemark><Placemark><name>6. Mustafa’s Gemüse Kebap</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.4033,52.4997,0</coordinates></Point></Placemark><Placemark><name>7. Café Einstein Stammhaus</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.351,52.5034,0</coordinates></Point></Placemark><Placemark><name>8. Stasi Museum</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.499,52.515,0</coordinates></Point></Placemark><Placemark><name>9. Museumsinsel</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.401,52.5169,0</coordinates></Point></Placemark><Placemark><name>10. Lustgarten</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.3995,52.5187,0</coordinates></Point></Placemark><Placemark><name>Dag 3 – West-Berlijn &amp; Spionage route</name><styleUrl>#day3-line</styleUrl><LineString><tessellate>1</tessellate><coordinates>13.4834,52.4686,0 13.3307,52.503,0 13.3309,52.5039,0 13.3904,52.5076,0 13.3826,52.507,0 13.4033,52.4997,0 13.351,52.5034,0 13.499,52.515,0 13.401,52.5169,0 13.3995,52.5187,0</coordinates></LineString></Placemark></Folder></Document></kml>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Berlijn Trip – Dag 1/2/3</name>
+    <!-- Styling for the lines and icons of each day -->
+    <Style id="day1-line"><LineStyle><color>ff2727d7</color><width>3</width></LineStyle></Style>
+    <Style id="day1-icon"><IconStyle><color>ff2727d7</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+    <Style id="day2-line"><LineStyle><color>ffb47545</color><width>3</width></LineStyle></Style>
+    <Style id="day2-icon"><IconStyle><color>ffb47545</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+    <Style id="day3-line"><LineStyle><color>ff50981a</color><width>3</width></LineStyle></Style>
+    <Style id="day3-icon"><IconStyle><color>ff50981a</color><Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle></Style>
+
+    <!-- Day 1: Arrival & creative vibe -->
+    <Folder>
+      <name>Dag 1 – Aankomst &amp; Creatieve vibe</name>
+      <Placemark><name>1. Bootshaus (B&amp;B)</name><styleUrl>#day1-icon</styleUrl><Point><coordinates>13.4834,52.4686,0</coordinates></Point></Placemark>
+      <Placemark><name>2. Prenzlauer Berg - Kollwitzkiez</name><styleUrl>#day1-icon</styleUrl><Point><coordinates>13.4235,52.538,0</coordinates></Point></Placemark>
+      <Placemark><name>3. The Barn Coffee (Kollwitzkiez)</name><styleUrl>#day1-icon</styleUrl><Point><coordinates>13.4206,52.5399,0</coordinates></Point></Placemark>
+      <Placemark><name>4. Kanaan Restaurant</name><styleUrl>#day1-icon</styleUrl><Point><coordinates>13.4224,52.5462,0</coordinates></Point></Placemark>
+      <Placemark><name>5. Hackescher Markt &amp; Hackesche Höfe</name><styleUrl>#day1-icon</styleUrl><Point><coordinates>13.4026,52.5246,0</coordinates></Point></Placemark>
+      <Placemark><name>6. Monbijoupark</name><styleUrl>#day1-icon</styleUrl><Point><coordinates>13.3955,52.5231,0</coordinates></Point></Placemark>
+      <!-- Route for day 1: Bootshaus through all points in order -->
+      <Placemark><name>Dag 1 – Aankomst &amp; Creatieve vibe route</name><styleUrl>#day1-line</styleUrl>
+        <LineString><tessellate>1</tessellate>
+          <coordinates>13.4834,52.4686,0 13.4235,52.538,0 13.4206,52.5399,0 13.4224,52.5462,0 13.4026,52.5246,0 13.3955,52.5231,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+
+    <!-- Day 2: East Berlin & the Wall (updated to include Stasi Museum) -->
+    <Folder>
+      <name>Dag 2 – Oost-Berlijn &amp; De Muur</name>
+      <Placemark><name>1. Bootshaus (B&amp;B)</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.4834,52.4686,0</coordinates></Point></Placemark>
+      <Placemark><name>2. Alexanderplatz</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.4132,52.5219,0</coordinates></Point></Placemark>
+      <Placemark><name>3. Karl-Marx-Allee</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.4295,52.5201,0</coordinates></Point></Placemark>
+      <Placemark><name>4. Silo Coffee</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.4535,52.5104,0</coordinates></Point></Placemark>
+      <Placemark><name>5. East Side Gallery</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.4399,52.505,0</coordinates></Point></Placemark>
+      <Placemark><name>6. Oberbaumbrücke</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.4484,52.5013,0</coordinates></Point></Placemark>
+      <Placemark><name>7. Michelberger Hotel Café</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.4481,52.5024,0</coordinates></Point></Placemark>
+      <Placemark><name>8. Stasi Museum</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.499,52.515,0</coordinates></Point></Placemark>
+      <Placemark><name>9. Bernauer Straße Memorial</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.3903,52.5351,0</coordinates></Point></Placemark>
+      <Placemark><name>10. Tränenpalast</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.3862,52.5206,0</coordinates></Point></Placemark>
+      <Placemark><name>11. James-Simon-Park</name><styleUrl>#day2-icon</styleUrl><Point><coordinates>13.3982,52.5215,0</coordinates></Point></Placemark>
+      <!-- Route for day 2: Bootshaus through all points including Stasi Museum before Bernauer Straße -->
+      <Placemark><name>Dag 2 – Oost-Berlijn &amp; De Muur route</name><styleUrl>#day2-line</styleUrl>
+        <LineString><tessellate>1</tessellate>
+          <coordinates>13.4834,52.4686,0 13.4132,52.5219,0 13.4295,52.5201,0 13.4535,52.5104,0 13.4399,52.505,0 13.4484,52.5013,0 13.4481,52.5024,0 13.499,52.515,0 13.3903,52.5351,0 13.3862,52.5206,0 13.3982,52.5215,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+
+    <!-- Day 3: West Berlin & Spionage (updated to remove Stasi Museum) -->
+    <Folder>
+      <name>Dag 3 – West-Berlijn &amp; Spionage</name>
+      <Placemark><name>1. Bootshaus (B&amp;B)</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.4834,52.4686,0</coordinates></Point></Placemark>
+      <Placemark><name>2. Kurfürstendamm</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.3307,52.503,0</coordinates></Point></Placemark>
+      <Placemark><name>3. The Barn Ku’damm</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.3309,52.5039,0</coordinates></Point></Placemark>
+      <Placemark><name>4. Checkpoint Charlie</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.3904,52.5076,0</coordinates></Point></Placemark>
+      <Placemark><name>5. Topographie des Terrors</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.3826,52.507,0</coordinates></Point></Placemark>
+      <Placemark><name>6. Mustafa’s Gemüse Kebap</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.4033,52.4997,0</coordinates></Point></Placemark>
+      <Placemark><name>7. Café Einstein Stammhaus</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.351,52.5034,0</coordinates></Point></Placemark>
+      <Placemark><name>8. Museumsinsel</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.401,52.5169,0</coordinates></Point></Placemark>
+      <Placemark><name>9. Lustgarten</name><styleUrl>#day3-icon</styleUrl><Point><coordinates>13.3995,52.5187,0</coordinates></Point></Placemark>
+      <!-- Route for day 3: Bootshaus through all points; Stasi Museum removed -->
+      <Placemark><name>Dag 3 – West-Berlijn &amp; Spionage route</name><styleUrl>#day3-line</styleUrl>
+        <LineString><tessellate>1</tessellate>
+          <coordinates>13.4834,52.4686,0 13.3307,52.503,0 13.3309,52.5039,0 13.3904,52.5076,0 13.3826,52.507,0 13.4033,52.4997,0 13.351,52.5034,0 13.401,52.5169,0 13.3995,52.5187,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
