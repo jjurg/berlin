@@ -114,6 +114,7 @@
     });
 
   loadBerlinWall();
+  loadNeighborhoods();
 
   function renderInfo(name) {
     var info = document.getElementById('info');
@@ -261,6 +262,61 @@
       })
       .catch(function(err) {
         logParseError('Failed to load Berlin Wall data: ' + err.message);
+      });
+  }
+
+  function renderNeighborhoodInfo(props) {
+    var info = document.getElementById('info');
+    var html = '<h2>' + props.name + '</h2>';
+    if (props.culture) {
+      html += '<p>' + props.culture + '</p>';
+    }
+    if (props.things_to_do) {
+      html += '<p><strong>Things to do:</strong> ' + props.things_to_do + '</p>';
+    }
+    if (props.history) {
+      html += '<p><strong>History:</strong> ' + props.history + '</p>';
+    }
+    if (props.why_visit) {
+      html += '<p><strong>Why visit:</strong> ' + props.why_visit + '</p>';
+    }
+    if (props.best_time) {
+      html += '<p><strong>Best time to visit:</strong> ' + props.best_time + '</p>';
+    }
+    info.innerHTML = html;
+  }
+
+  function loadNeighborhoods() {
+    fetch('neighborhoods.geojson')
+      .then(function(res) { return res.json(); })
+      .then(function(data) {
+        var neighborhoodLayer = L.geoJSON(data, {
+          style: { color: '#3388ff', weight: 2, fillOpacity: 0.1 },
+          onEachFeature: function(feature, layer) {
+            layer.on('click', function() {
+              renderNeighborhoodInfo(feature.properties);
+            });
+          }
+        });
+        var controls = document.getElementById('controls');
+        var label = document.createElement('label');
+        var cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.onchange = function() {
+          if (cb.checked) {
+            neighborhoodLayer.addTo(map);
+          } else {
+            map.removeLayer(neighborhoodLayer);
+          }
+        };
+        label.appendChild(cb);
+        label.appendChild(document.createTextNode(' Neighborhoods'));
+        controls.appendChild(label);
+        controls.appendChild(document.createElement('br'));
+        logStatus('Neighborhood data loaded.');
+      })
+      .catch(function(err) {
+        logParseError('Failed to load neighborhoods: ' + err.message);
       });
   }
 </script>
