@@ -113,6 +113,8 @@
       loadKml();
     });
 
+  loadBerlinWall();
+
   function renderInfo(name) {
     var info = document.getElementById('info');
     var md = metadata[name];
@@ -232,6 +234,33 @@
       })
       .catch(function(err) {
         logParseError('Failed to load KML: ' + err.message);
+      });
+  }
+
+  function loadBerlinWall() {
+    fetch('berlin-wall.geojson')
+      .then(function(res) { return res.json(); })
+      .then(function(data) {
+        var wallLayer = L.geoJSON(data, { style: { color: '#964B00', weight: 4 } });
+        var controls = document.getElementById('controls');
+        var label = document.createElement('label');
+        var cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.onchange = function() {
+          if (cb.checked) {
+            wallLayer.addTo(map);
+          } else {
+            map.removeLayer(wallLayer);
+          }
+        };
+        label.appendChild(cb);
+        label.appendChild(document.createTextNode(' Berlin Wall'));
+        controls.appendChild(label);
+        controls.appendChild(document.createElement('br'));
+        logStatus('Berlin Wall data loaded.');
+      })
+      .catch(function(err) {
+        logParseError('Failed to load Berlin Wall data: ' + err.message);
       });
   }
 </script>
