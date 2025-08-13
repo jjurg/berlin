@@ -101,7 +101,12 @@
   fetch('berlin_trip_metadata.json')
     .then(function(res) { return res.json(); })
     .then(function(data) {
-      data.forEach(function(item) { metadata[item.title] = item; });
+      data.forEach(function(item) {
+        var names = Array.isArray(item.kml_name)
+          ? item.kml_name
+          : (item.kml_name ? [item.kml_name] : [item.title]);
+        names.forEach(function(n) { metadata[n] = item; });
+      });
       loadKml();
     })
     .catch(function(err) {

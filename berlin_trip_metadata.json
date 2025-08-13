@@ -3,6 +3,7 @@
     "day": "Day 1",
     "event_number": 1,
     "title": "Prenzlauer Berg – Kollwitzkiez",
+    "kml_name": "2. Prenzlauer Berg - Kollwitzkiez",
     "tags": [
       "arrival",
       "vintage",
@@ -21,6 +22,7 @@
     "day": "Day 1",
     "event_number": 2,
     "title": "The Barn (Specialty Coffee)",
+    "kml_name": "3. The Barn Coffee (Kollwitzkiez)",
     "tags": [
       "coffee",
       "specialty",
@@ -38,6 +40,7 @@
     "day": "Day 1",
     "event_number": 3,
     "title": "Kanaan (Lunch)",
+    "kml_name": "4. Kanaan Restaurant",
     "tags": [
       "lunch",
       "mediterranean",
@@ -55,6 +58,7 @@
     "day": "Day 1",
     "event_number": 4,
     "title": "Hackescher Markt & Hackesche Höfe",
+    "kml_name": "5. Hackescher Markt & Hackesche Höfe",
     "tags": [
       "art",
       "architecture",
@@ -73,6 +77,7 @@
     "day": "Day 1",
     "event_number": 5,
     "title": "Monbijoupark (Riverside Walk)",
+    "kml_name": "6. Monbijoupark",
     "tags": [
       "park",
       "riverside",
@@ -90,6 +95,7 @@
     "day": "Day 2",
     "event_number": 1,
     "title": "Alexanderplatz & Fernsehturm View",
+    "kml_name": "2. Alexanderplatz",
     "tags": [
       "DDR",
       "landmark",
@@ -107,6 +113,7 @@
     "day": "Day 2",
     "event_number": 2,
     "title": "Karl-Marx-Allee",
+    "kml_name": "3. Karl-Marx-Allee",
     "tags": [
       "DDR",
       "architecture",
@@ -123,6 +130,7 @@
     "day": "Day 2",
     "event_number": 3,
     "title": "Silo Coffee (Friedrichshain)",
+    "kml_name": "4. Silo Coffee",
     "tags": [
       "coffee",
       "brunch",
@@ -140,6 +148,7 @@
     "day": "Day 2",
     "event_number": 4,
     "title": "East Side Gallery (Berlin Wall)",
+    "kml_name": "5. East Side Gallery",
     "tags": [
       "wall",
       "art",
@@ -157,6 +166,7 @@
     "day": "Day 2",
     "event_number": 5,
     "title": "Oberbaumbrücke",
+    "kml_name": "6. Oberbaumbrücke",
     "tags": [
       "bridge",
       "symbolic",
@@ -173,6 +183,7 @@
     "day": "Day 2",
     "event_number": 6,
     "title": "Michelberger Hotel Café (Lunch)",
+    "kml_name": "7. Michelberger Hotel Café",
     "tags": [
       "lunch",
       "seasonal",
@@ -190,6 +201,7 @@
     "day": "Day 2",
     "event_number": 7,
     "title": "Gedenkstätte Berliner Mauer (Bernauer Straße)",
+    "kml_name": "8. Bernauer Straße Memorial",
     "tags": [
       "memorial",
       "wall",
@@ -207,6 +219,7 @@
     "day": "Day 2",
     "event_number": 8,
     "title": "Tränenpalast (Palace of Tears)",
+    "kml_name": "9. Tränenpalast",
     "tags": [
       "border",
       "museum",
@@ -224,6 +237,7 @@
     "day": "Day 2",
     "event_number": 9,
     "title": "James-Simon-Park / Museum Island View",
+    "kml_name": "10. James-Simon-Park",
     "tags": [
       "park",
       "riverside",
@@ -241,6 +255,7 @@
     "day": "Day 3",
     "event_number": 1,
     "title": "Kurfürstendamm",
+    "kml_name": "2. Kurfürstendamm",
     "tags": [
       "west-berlin",
       "boulevard",
@@ -273,6 +288,7 @@
     "day": "Day 3",
     "event_number": 3,
     "title": "Checkpoint Charlie (Photo Stop)",
+    "kml_name": "4. Checkpoint Charlie",
     "tags": [
       "checkpoint",
       "symbol",
@@ -289,6 +305,7 @@
     "day": "Day 3",
     "event_number": 4,
     "title": "Topographie des Terrors (Exhibition)",
+    "kml_name": "5. Topographie des Terrors",
     "tags": [
       "museum",
       "free",
@@ -306,6 +323,10 @@
     "day": "Day 3",
     "event_number": 5,
     "title": "Lunch: Mustafa’s Gemüse Kebap (or Café Einstein)",
+    "kml_name": [
+      "6. Mustafa’s Gemüse Kebap",
+      "7. Café Einstein Stammhaus"
+    ],
     "tags": [
       "lunch",
       "streetfood",
@@ -323,6 +344,7 @@
     "day": "Day 3",
     "event_number": 6,
     "title": "Stasi Museum (Former HQ)",
+    "kml_name": "8. Stasi Museum",
     "tags": [
       "stasi",
       "intelligence",
@@ -340,6 +362,10 @@
     "day": "Day 3",
     "event_number": 7,
     "title": "Museumsinsel (Island) & Lustgarten Walk",
+    "kml_name": [
+      "9. Museumsinsel",
+      "10. Lustgarten"
+    ],
     "tags": [
       "unesco",
       "park",
